@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import fib_picture from './fib-picture.jpg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import OtherPage from './OtherPage';
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={fib_picture} className="App-logo" alt="fibonnaci-picture" />
           <a
             className="App-link"
             href="https://www.mathsisfun.com/numbers/fibonacci-sequence.html"
