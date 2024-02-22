@@ -12,7 +12,7 @@ function App() {
         <header className="App-header">
           <img src={fib_picture} className="App-logo" alt="fibonnaci-picture" />
           <div>Fibonnaci Calculator</div>
-          <Link to="/otherpage">Other Page</Link>
+          <Link to="/otherpage">More information on the Fibonnaci sequence</Link>
         </header>
         <div>
           <Route exact path="/" component={Fib} />
