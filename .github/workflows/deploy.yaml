@@ -33,11 +33,11 @@ jobs:
         run: |-
           gcloud --quiet auth configure-docker
 
-      # - name: Get Credentials
-      #   uses: google-github-actions/get-gke-credentials
-      #   with:
-      #     cluster_name: fibonnaci-calculator-multi-cluster
-      #     location: africa-south1-a
+      - name: Get Credentials
+        uses: google-github-actions/get-gke-credentials@v2
+        with:
+          cluster_name: fibonnaci-calculator-multi-cluster
+          location: africa-south1-a
 
       # - name: Build
       #   run: |-
