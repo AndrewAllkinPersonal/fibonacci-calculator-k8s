@@ -13,17 +13,15 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://www.mathsisfun.com/numbers/fibonacci-sequence.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Fibonnaci Calculator
           </a>
-          <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
         </header>
         <div>
-          <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
         </div>
       </div>
