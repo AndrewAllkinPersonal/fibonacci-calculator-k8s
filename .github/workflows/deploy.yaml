@@ -20,12 +20,12 @@ jobs:
           docker run -e CI=true andrewallkin/react-test npm test
 
       - name: Set Service Key
-        uses: 'google-github-actions/auth@v0'
+        uses: google-github-actions/auth
         with:
           credentials_json: '${{ secrets.GCP_KEY_CREDENTIALS }}'
 
       - name: Set Project
-        uses: google-github-actions/setup-gcloud@v0
+        uses: google-github-actions/setup-gcloud
         with:
           project_id: fibonnaci-calculator-k8s
 
@@ -34,7 +34,7 @@ jobs:
           gcloud --quiet auth configure-docker
 
       - name: Get Credentials
-        uses: google-github-actions/get-gke-credentials@v0
+        uses: google-github-actions/get-gke-credentials
         with:
           cluster_name: fibonnaci-calculator-multi-cluster
           location: africa-south1-a
