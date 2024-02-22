@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Test
         run: |-
@@ -20,12 +20,12 @@ jobs:
           docker run -e CI=true andrewallkin/react-test npm test
 
       - name: Set Service Key
-        uses: google-github-actions/auth@v0
+        uses: google-github-actions/auth@v2
         with:
           credentials_json: '${{ secrets.GCP_KEY_CREDENTIALS }}'
 
       - name: Set Project
-        uses: google-github-actions/setup-gcloud@v0
+        uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: fibonnaci-calculator-k8s
 
