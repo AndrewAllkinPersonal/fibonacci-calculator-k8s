@@ -5,6 +5,9 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  /* Disable animation and transition */
+  animation: none !important;
+  transition: none !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {

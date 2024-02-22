@@ -11,15 +11,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={fib_picture} className="App-logo" alt="fibonnaci-picture" />
-          <a
-            className="App-link"
-            href="https://www.mathsisfun.com/numbers/fibonacci-sequence.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Fibonnaci Calculator
-          </a>
-          <Link to="/otherpage">Other Page</Link>
+          <div>Fibonnaci Calculator</div>
+          <Link to="/otherpage">More information on the Fibonnaci sequence</Link>
         </header>
         <div>
           <Route exact path="/" component={Fib} />
